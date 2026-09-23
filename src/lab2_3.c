@@ -27,8 +27,5 @@ int main(void) {
             }
         }
     }
-
-    // TODO: validate input and print all primes up to n
-
     return 0;
 }
