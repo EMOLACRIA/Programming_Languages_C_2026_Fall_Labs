@@ -12,8 +12,11 @@
 */
 
 long long factorial(int n) {
-    // TODO: compute factorial iteratively
-    return 1; // placeholder
+    long long sum = 1;
+    for (int i = 1; i <= n; i++) {
+        sum = sum * i;
+    }
+    return sum; // placeholder
 }
 
 int main(void) {
@@ -21,8 +24,11 @@ int main(void) {
 
     printf("Enter a non-negative integer n: ");
     scanf("%d", &n);
-
-    // TODO: validate input, call function, print result
-
+    if (n < 0) {
+        printf("Please enter a number bigger than 0.");
+    }
+    else {
+        printf("Factorial of %d! is %lld\n",n,factorial(n));
+    }
     return 0;
 }
