@@ -18,7 +18,8 @@ int main(void) {
     printf("Enter an integer n (>= 2): ");
     scanf("%d", &n);
     if (n < 2) {
-        printf("Please enter a number bigger than 2.");
+        printf("Please enter a number greater than or equal to 2.\n");
+        return 0;
     }
     else {
         for (int i = 2; i<=n; i++) {

@@ -5,7 +5,7 @@ long long factorial(int n) {
     for (int i = 1; i <= n; i++) {
         sum = sum * i;
     }
-    return sum; // placeholder
+    return sum;
 }
 
 int main(void) {
@@ -14,7 +14,7 @@ int main(void) {
     printf("Enter a non-negative integer n: ");
     scanf("%d", &n);
     if (n < 0) {
-        printf("Please enter a number bigger than 0.");
+        printf("Please enter a non-negative number.\n");
     }
     else {
         printf("Factorial of %d! is %lld\n",n,factorial(n));
